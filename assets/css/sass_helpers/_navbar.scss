@@ -33,6 +33,7 @@ header{
             margin: 0 20px;
         }
         .nav-link{
+            color: $text-color;
             text-decoration: none;
             transition: all 0.3s ease 0s;
             &:hover{

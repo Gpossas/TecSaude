@@ -51,6 +51,7 @@ header .nav-list .nav-item {
   margin: 0 20px;
 }
 header .nav-list .nav-link {
+  color: #363636;
   text-decoration: none;
   transition: all 0.3s ease 0s;
 }
