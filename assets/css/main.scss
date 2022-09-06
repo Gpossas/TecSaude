@@ -1,0 +1,27 @@
+// ==================== GOOGLE FONTS ====================
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;700&display=swap');
+
+// ==================== VARIABLES ====================
+@import "./sass_helpers/variables";
+
+
+// ==================== BASE ====================
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    color: $text-color;
+    font-size: $text-size;
+    background-color: #1f271b;
+}
+
+// ==================== NAVBAR/HEADER ====================
+@import "./sass_helpers/navbar";
