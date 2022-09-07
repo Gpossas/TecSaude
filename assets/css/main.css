@@ -13,16 +13,21 @@ body {
   font-family: "Plus Jakarta Sans", sans-serif;
   color: #363636;
   font-size: calc(0.5rem + 0.7vw);
-  background-color: #1f271b;
+  background-color: #9efc70;
+}
+
+main {
+  margin-top: calc(30px + 4vw);
 }
 
 header {
   position: fixed;
+  top: 0;
   display: flex;
   justify-content: flex-end;
   align-items: center;
   width: 100%;
-  height: 13%;
+  height: calc(30px + 4vw);
   background-color: white;
   padding: 0 10%;
 }
@@ -40,7 +45,7 @@ header .nav-logo #logo {
 header .nav-logo .nav-link {
   font-weight: 700;
   color: #00da5b;
-  font-size: calc(1rem + 1.2vw);
+  font-size: calc(1rem + 1vw);
   text-decoration: none;
 }
 header .nav-list {
@@ -87,7 +92,7 @@ header #menuIcon {
   header .nav-list {
     display: block;
     position: fixed;
-    top: 13%;
+    top: calc(30px + 4vw);
     left: 0;
     width: 100%;
     text-align: center;
@@ -103,6 +108,6 @@ header #menuIcon {
   }
   header #menuIcon {
     display: block;
-    font-size: calc(1rem + 1.2vw);
+    font-size: calc(1rem + 1vw);
   }
 }/*# sourceMappingURL=main.css.map */

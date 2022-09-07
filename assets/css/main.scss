@@ -20,8 +20,14 @@ body{
     font-family: 'Plus Jakarta Sans', sans-serif;
     color: $text-color;
     font-size: $text-size;
-    background-color: #1f271b;
+    background-color: #9efc70;
+}
+
+main{
+    margin-top: $header-height;
 }
 
 // ==================== NAVBAR/HEADER ====================
 @import "./sass_helpers/navbar";
+
+// ==================== HOME ====================
