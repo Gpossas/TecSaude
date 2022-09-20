@@ -20,7 +20,6 @@ body{
     font-family: 'Plus Jakarta Sans', sans-serif;
     color: $text-color;
     font-size: $text-size;
-    background-color: #9efc70;
 }
 
 main{
@@ -30,4 +29,5 @@ main{
 // ==================== NAVBAR/HEADER ====================
 @import "./sass_helpers/navbar";
 
-// ==================== HOME ====================
+// ==================== hero ====================
+@import "./sass_helpers/hero";

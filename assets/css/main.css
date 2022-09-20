@@ -13,7 +13,6 @@ body {
   font-family: "Plus Jakarta Sans", sans-serif;
   color: #363636;
   font-size: calc(0.5rem + 0.7vw);
-  background-color: #9efc70;
 }
 
 main {
@@ -109,5 +108,35 @@ header #menuIcon {
   header #menuIcon {
     display: block;
     font-size: calc(1rem + 1vw);
+  }
+}
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hero .hero-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  font-size: clamp(14px, 1.6vw, 34px);
+  height: clamp(250px, 30vw, 800px);
+  width: clamp(250px, 40vw, 1000px);
+}
+.hero .hero-text h1 {
+  font-size: max(26px, 4.5vw);
+}
+.hero .hero-text .hero-link {
+  color: #00da5b;
+  text-decoration: none;
+}
+.hero .hero-image {
+  width: max(230px, 40%);
+  height: auto;
+}
+
+@media only screen and (max-width: 600px) {
+  .hero {
+    flex-direction: column-reverse;
   }
 }/*# sourceMappingURL=main.css.map */
