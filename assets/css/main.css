@@ -70,12 +70,15 @@ header button {
   border-radius: 5px;
   border: none;
   background-color: #00da5b;
-  color: white;
   font-weight: 700;
   transition: all 1s ease 0s;
 }
 header button:hover {
   background-color: #00a746;
+}
+header button a {
+  color: white;
+  text-decoration: none;
 }
 header #menuIcon {
   display: none;
@@ -138,5 +141,146 @@ header #menuIcon {
 @media only screen and (max-width: 600px) {
   .hero {
     flex-direction: column-reverse;
+  }
+}
+main {
+  display: flex;
+  justify-content: center;
+}
+
+.donation-section {
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+}
+.donation-section .text {
+  text-align: center;
+}
+.donation-section fieldset {
+  margin: 10px;
+  border: none;
+}
+.donation-section legend {
+  font-weight: bolder;
+  margin-bottom: 15px;
+  text-align: center;
+  font-size: calc(0.5vw + 0.7rem);
+}
+.donation-section .donation-option {
+  display: flex;
+  align-content: flex-start;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0 20px;
+}
+.donation-section .donation-option p {
+  margin: 0;
+  padding: 0;
+}
+.donation-section .donation-value {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  flex-wrap: wrap;
+  max-width: 24rem;
+  gap: 10px 5px;
+}
+.donation-section .donation-value .other {
+  display: flex;
+  align-self: center;
+  margin-left: 15px;
+  width: 90%;
+}
+.donation-section .donation-value p {
+  display: flex;
+  margin-bottom: 2px;
+}
+.donation-section .donation-value label {
+  padding: 10px 15px;
+  border-radius: 5px;
+  background-color: #e5e5e5;
+  color: #ababab;
+  font-size: 1rem;
+  font-weight: 600;
+  transition: background-color 0.65s, box-shadow 0.65s;
+}
+.donation-section .donation-value input {
+  border: none;
+  background-color: transparent;
+  font-size: 1rem;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  color: white;
+  font-weight: 600;
+}
+.donation-section .donation-value input:checked + label {
+  background-color: #00da5b;
+  color: white;
+}
+.donation-section .donation-value input::-moz-placeholder {
+  color: #ababab;
+}
+.donation-section .donation-value input:-ms-input-placeholder {
+  color: #ababab;
+}
+.donation-section .donation-value input::placeholder {
+  color: #ababab;
+}
+.donation-section .donation-value input:-webkit-outer-spin-button, .donation-section .donation-value input -webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+.donation-section .donation-value input:focus {
+  outline: none;
+}
+.donation-section .donation-value input::-webkit-outer-spin-button,
+.donation-section .donation-value input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.donation-section .donation-value input[type=number] {
+  -moz-appearance: textfield; /* Firefox */
+}
+.donation-section .contact-information {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: right;
+  gap: 10px 0;
+}
+.donation-section .contact-information input {
+  height: 23px;
+  width: 98%;
+}
+.donation-section .contact-information input:focus {
+  border-radius: 3px;
+  outline: none;
+  border: 3px solid #00da5b;
+  box-shadow: 0 0 2px #00c150;
+}
+.donation-section .contact-information p {
+  flex: 50%;
+}
+.donation-section button {
+  margin: 10px;
+  cursor: pointer;
+  background-color: #00da5b;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 0;
+  color: white;
+  font-size: calc(0.5vw + 0.7rem);
+  font-weight: bold;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  transition: ease 0.65s;
+}
+.donation-section button:hover {
+  transition: ease 0.65s;
+  background-color: #00c150;
+}
+
+@media only screen and (max-width: 550px) {
+  .contact-information {
+    flex-direction: column;
   }
 }/*# sourceMappingURL=main.css.map */
