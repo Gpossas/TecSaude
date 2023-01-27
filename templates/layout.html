@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" href="../static/images/tecsaudeIcon.svg">
+
+    <!-- ========== ICON ========== -->
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- ======= CSS ======= -->
+    <link rel="stylesheet" href="../static/css/main.css">
+    {% block head %}{% endblock %}
+
+    <title>Tec saúde</title>
+</head>
+<body>
+    <!-- ========== HEADER ========== -->
+    <header>
+        <i id="menuIcon" class='bx bx-menu'></i>
+
+        <div class="nav-logo">
+            <a href="/">
+                <img id="logo" alt="company logo" src="../static/images/tecsaudeIcon.svg">
+            </a>
+            <a class="nav-link" href="/">TecSaúde</a>
+        </div>
+        
+        <nav>
+            <ul class="nav-list hiddenMenu">
+                <li class="nav-item"> <a class="nav-link" href="#">Sobre</a> </li>
+                <li class="nav-item"> <a class="nav-link" href="#">Causas</a> </li>
+                <li class="nav-item"> <a class="nav-link" href="#">Consequências</a> </li>
+                <li class="nav-item"> <a class="nav-link" href="#">Tratamentos</a> </li> 
+            </ul>
+        </nav>
+
+        <button><a class="nav-link" href="./donation">Doar</a></button>
+    </header>
+
+    <main>
+        {% block main %}{% endblock %}
+    </main>
+
+    <script src="../static/js/main.js"></script>
+</body>
+</html>

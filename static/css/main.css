@@ -1,0 +1,286 @@
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;700&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  color: #363636;
+  font-size: calc(0.5rem + 0.7vw);
+}
+
+main {
+  margin-top: calc(30px + 4vw);
+}
+
+header {
+  position: fixed;
+  top: 0;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+  height: calc(30px + 4vw);
+  background-color: white;
+  padding: 0 10%;
+}
+header .nav-logo {
+  height: auto;
+  display: flex;
+  align-items: center;
+  margin-right: auto;
+}
+header .nav-logo #logo {
+  width: calc(20px + 3.1vw);
+  height: auto;
+  margin-right: 5px;
+}
+header .nav-logo .nav-link {
+  font-weight: 700;
+  color: #00da5b;
+  font-size: calc(1rem + 0.9vw);
+  text-decoration: none;
+}
+header .nav-list {
+  display: flex;
+  list-style: none;
+}
+header .nav-list .nav-item {
+  margin: 0 20px;
+}
+header .nav-list .nav-link {
+  color: #363636;
+  text-decoration: none;
+  transition: all 0.3s ease 0s;
+}
+header .nav-list .nav-link:hover {
+  color: #00da5b;
+}
+header button {
+  cursor: pointer;
+  font-size: calc(0.5rem + 0.7vw);
+  margin-left: 10px;
+  padding: min(2vw, 8px) min(3.4vw, 20px);
+  border-radius: 5px;
+  border: none;
+  background-color: #00da5b;
+  font-weight: 700;
+  transition: all 1s ease 0s;
+}
+header button:hover {
+  background-color: #00a746;
+}
+header button a {
+  color: white;
+  text-decoration: none;
+}
+header #menuIcon {
+  display: none;
+}
+
+@media only screen and (max-width: 900px) {
+  header {
+    justify-content: space-between;
+  }
+  header .nav-logo {
+    margin-right: 0;
+  }
+  header .nav-list {
+    display: block;
+    position: fixed;
+    top: calc(30px + 4vw);
+    left: 0;
+    width: 100%;
+    text-align: center;
+    background-color: white;
+    border-radius: 0 0 8px 8px;
+    z-index: 1;
+  }
+  header .nav-list .nav-item {
+    margin-bottom: 30px;
+  }
+  header .hiddenMenu {
+    display: none;
+  }
+  header #menuIcon {
+    display: block;
+    font-size: calc(1rem + 0.9vw);
+  }
+}
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hero .hero-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  font-size: clamp(14px, 1.4vw, 34px);
+  height: clamp(250px, 30vw, 800px);
+  width: clamp(250px, 40vw, 1000px);
+}
+.hero .hero-text h1 {
+  font-size: max(26px, 4.3vw);
+}
+.hero .hero-text .hero-link {
+  color: #00da5b;
+  text-decoration: none;
+}
+.hero .hero-image {
+  width: max(230px, 45%);
+  height: auto;
+}
+
+@media only screen and (max-width: 600px) {
+  .hero {
+    flex-direction: column-reverse;
+  }
+}
+main {
+  display: flex;
+  justify-content: center;
+}
+
+.donation-section {
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+}
+.donation-section .text {
+  text-align: center;
+}
+.donation-section fieldset {
+  margin: 10px;
+  border: none;
+}
+.donation-section legend {
+  font-weight: bolder;
+  margin-bottom: 15px;
+  text-align: center;
+  font-size: calc(0.5vw + 0.7rem);
+}
+.donation-section .donation-option {
+  display: flex;
+  align-content: flex-start;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0 20px;
+}
+.donation-section .donation-option p {
+  margin: 0;
+  padding: 0;
+}
+.donation-section .donation-value {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  flex-wrap: wrap;
+  max-width: 24rem;
+  gap: 10px 5px;
+}
+.donation-section .donation-value .other {
+  display: flex;
+  align-self: center;
+  margin-left: 15px;
+  width: 90%;
+}
+.donation-section .donation-value p {
+  display: flex;
+  margin-bottom: 2px;
+}
+.donation-section .donation-value label {
+  padding: 10px 15px;
+  border-radius: 5px;
+  background-color: #e5e5e5;
+  color: #ababab;
+  font-size: 1rem;
+  font-weight: 600;
+  transition: background-color 0.65s, box-shadow 0.65s;
+}
+.donation-section .donation-value input {
+  border: none;
+  background-color: transparent;
+  font-size: 1rem;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  color: white;
+  font-weight: 600;
+}
+.donation-section .donation-value input:checked + label {
+  background-color: #00da5b;
+  color: white;
+}
+.donation-section .donation-value input::-moz-placeholder {
+  color: #ababab;
+}
+.donation-section .donation-value input:-ms-input-placeholder {
+  color: #ababab;
+}
+.donation-section .donation-value input::placeholder {
+  color: #ababab;
+}
+.donation-section .donation-value input:-webkit-outer-spin-button, .donation-section .donation-value input -webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+.donation-section .donation-value input:focus {
+  outline: none;
+}
+.donation-section .donation-value input::-webkit-outer-spin-button,
+.donation-section .donation-value input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.donation-section .donation-value input[type=number] {
+  -moz-appearance: textfield; /* Firefox */
+}
+.donation-section .contact-information {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: right;
+  gap: 10px 0;
+}
+.donation-section .contact-information input {
+  height: 30px;
+  width: 98%;
+}
+.donation-section .contact-information input:focus {
+  border-radius: 3px;
+  outline: none;
+  border: 3px solid #00da5b;
+  box-shadow: 0 0 2px #00c150;
+}
+.donation-section .contact-information p {
+  flex: 50%;
+}
+.donation-section button {
+  margin: 10px;
+  cursor: pointer;
+  background-color: #00da5b;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 0;
+  color: white;
+  font-size: calc(0.5vw + 0.7rem);
+  font-weight: bold;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  transition: ease 0.65s;
+}
+.donation-section button:hover {
+  transition: ease 0.65s;
+  background-color: #00c150;
+}
+
+@media only screen and (max-width: 550px) {
+  .contact-information {
+    flex-direction: column;
+  }
+}/*# sourceMappingURL=main.css.map */

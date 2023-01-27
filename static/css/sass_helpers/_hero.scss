@@ -1,0 +1,30 @@
+.hero{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .hero-text{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        font-size: $hero-text;
+        height: clamp(250px, 30vw, 800px);
+        width: clamp(250px, 40vw, 1000px);
+        h1{
+            font-size: $hero-big-text;
+        }
+        .hero-link{
+            color: $primary-color;
+            text-decoration: none;
+        }
+    }
+    .hero-image{
+        width: max(230px, 45%);
+        height: auto;
+    }
+}
+
+@media only screen and (max-width: 600px){
+  .hero{
+    flex-direction: column-reverse;
+  }  
+}

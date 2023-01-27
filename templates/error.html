@@ -1,0 +1,19 @@
+{% block head%}
+    <link rel="stylesheet" href="../static/css/error.css">
+{% endblock %}
+
+{% block main %}
+<main>
+    <div class="container">
+        <h2>Parece que algo deu errado :(</h2>
+        <h2>Por favor verifique se está tudo certo</h2>
+        
+        <ul>
+            {% for error in errors %}
+                <p>{{ error }}</p>
+            {% endfor %}
+        </ul>
+        <img alt="sad kid" src="../static/images/FreeVector-Sad-Kid.jpg"></img>
+    </div>
+</main>
+{% endblock%}

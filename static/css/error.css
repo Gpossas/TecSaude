@@ -1,0 +1,24 @@
+* {
+  margin: 0;
+  padding: 0;
+  background: #eacee4;
+  font-size: calc(0.5rem + 12px);
+}
+
+main {
+  height: 100vh;
+  display: grid;
+  place-items: center;
+  box-sizing: border-box;
+}
+main .container {
+  text-align: center;
+  max-height: auto;
+  max-width: 500px;
+  color: #952a90;
+}
+main .container img {
+  margin-top: 20px;
+  width: 100%;
+  height: auto;
+}/*# sourceMappingURL=error.css.map */

@@ -1,0 +1,9 @@
+$primary-color: #00da5b;
+$text-color: #363636; //#1f271b
+$header-height: calc(30px + 4vw);
+$title-size: calc(1rem + 0.9vw);
+$text-size: calc(0.5rem + 0.7vw);
+
+// ===== hero ===== //
+$hero-big-text: max(26px, 4.3vw); 
+$hero-text: clamp(14px, 1.4vw, 34px);

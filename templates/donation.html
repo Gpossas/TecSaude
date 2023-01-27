@@ -1,0 +1,79 @@
+{% extends "layout.html" %}
+
+{% block head %}
+    <link rel="stylesheet" href="../static/css/sass_helpers/donation.css">
+{% endblock %}
+
+{% block main %}
+<!-- ========== DONATION SECTION ========== -->
+<form class="donation-section" method="post" action="/donation">
+    <div class="text">
+        <h1>Toda doação fornece comida saudável e ajuda crianças a se alimentarem melhor</h1>
+        <p>Por favor ajude nós da comunidade São Rafael a levar comida e materiais para nossas crianças</p>    
+    </div>
+
+<!-- TODO: add subscriptions
+    <fieldset class="donation-option">
+        <legend>Escolha uma opção de doação:</legend>
+        <p>
+            <input id="monthly" type="radio" name="donation_option" value="donation-option" checked>
+            <label for="monthly">Doação mensal</label>
+        </p>
+        <p>
+            <input id="one-time" type="radio" name="donation_option" value="once">
+            <label for="one-time">Doação única</label>
+        </p>
+    </fieldset> -->
+
+    <fieldset class="donation-value">
+        <legend>valor da doação:</legend>
+
+        <p>
+            <input id="value_10" type="radio" value="1000" name="donation_value" checked>
+            <label for="value_10">R$10</label>    
+        </p>
+        <p>
+            <input id="value_15" type="radio" value="1500" name="donation_value">
+            <label for="value_15">R$15</label>
+        </p>
+        <p>
+            <input id="value_20" type="radio" value="2000" name="donation_value">
+            <label for="value_20">R$20</label>
+        </p>
+        <p>
+            <input id="value_30" type="radio" value="3000" name="donation_value">
+            <label for="value_30">R$30</label>
+        </p>
+        <p>
+            <label class="other" for="value-other">R$
+                <input id="value-other" type="number" name="donation_value" step="any" min="3" placeholder="0.00">
+            </label>
+        </p> 
+    </fieldset>
+
+    <fieldset class="contact-information">
+        <legend>Informações para contato:</legend>
+
+        <p>
+            <label for="first-name">Primeiro nome:</label>
+            <input type="text" name="first-name" maxlength="20" autocomplete="off" required>
+        </p>
+        <p>
+            <label for="last-name">Sobrenome:</label>
+            <input type="text" name="last-name" maxlength="20" autocomplete="off" required>
+        </p>
+        <p>
+            <label for="street">Rua:</label>
+            <input type="text" name="street" autocomplete="off" required>
+        </p>
+        <p>
+            <label for="phone">Telefone:</label>
+            <input type="tel" name="phone" maxlength="15" autocomplete="off" placeholder="82 99999 9999" required>
+        </p>
+    </fieldset>
+
+    <button type="submit" id="checkout-button">Fazer doação</button>
+</form>
+
+<script src="../static/js/donation.js"></script>
+{% endblock %}
